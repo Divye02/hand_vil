@@ -22,13 +22,15 @@ $ export PYTHONPATH=$PYTHONPATH:<your_path>/mj_envs
 
 ## Training the Visuomotor policies
 
-1. **Step 1:** Clone this repo. Replace the environment XML files in mj_envs with that present in mjrl_mod/envs/assests, as we need to add the cameras for training the visuomotor policies. Namely:
+1. **Step 1:** Make a "local_settings.py" file and set the variable "MAIN_DIR" to point to the root folder of the project. Consult local_settings.py.sample.
+
+2. **Step 2:** Clone this repo. Replace the environment XML files in mj_envs with that present in mjrl_mod/envs/assests, as we need to add the cameras for training the visuomotor policies. Namely:
 * mj_envs/hand_manipulation_suite/assets/DAPG_door.xml to be relaced by mjrl_mod/envs/assets/DAPG_door.xml
 * mj_envs/hand_manipulation_suite/assets/DAPG_hammer.xml to be relaced by mjrl_mod/envs/assets/DAPG_hammer.xml
 * mj_envs/hand_manipulation_suite/assets/DAPG_pen.xml to be relaced by mjrl_mod/envs/assets/DAPG_pen.xml
 * mj_envs/hand_manipulation_suite/assets/DAPG_relocate.xml to be relaced by mjrl_mod/envs/assets/DAPG_relocate.xml
 
-2. **Step 2** We already have the expert policies for each of the environments fetched from [hand_dapg](https://github.com/aravindr93/hand_dapg). So we are ready to train the visual policy for any of the above 4 environments.
+3. **Step 3** We already have the expert policies for each of the environments fetched from [hand_dapg](https://github.com/aravindr93/hand_dapg). So we are ready to train the visual policy for any of the above 4 environments.
 * It is highly reccomended that you use a machine with a GPU for faster training.
 * All the training for the different environments are present in configs/
 * Move the config that you want to run to the root project directory. For example to use the Hand Hammer config run the following command:
