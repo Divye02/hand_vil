@@ -31,7 +31,7 @@ $ export PYTHONPATH=$PYTHONPATH:<your_path>/mj_envs
 * mj_envs/hand_manipulation_suite/assets/DAPG_relocate.xml to be relaced by mjrl_mod/envs/assets/DAPG_relocate.xml
 
 3. **Step 3** We already have the expert policies for each of the environments fetched from [hand_dapg](https://github.com/aravindr93/hand_dapg). So we are ready to train the visual policy for any of the above 4 environments.
-* It is highly reccomended that you use a machine with a GPU for faster training.
+* It is highly reccomended that you use a machine with a GPU for faster training. If you are not planning on using a GPU, make sure to set `use_cuda` in the config to False.
 * All the training for the different environments are present in configs/
 * Move the config that you want to run to the root project directory. For example to use the Hand Hammer config run the following command:
 ```
