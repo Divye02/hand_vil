@@ -24,9 +24,8 @@ class PointMassEnv(PointMassEnv, mujoco_env.MujocoEnv):
         # return self._get_obs()
         agent_pos = self.data.body_xpos[self.agent_bid].ravel()[:2]
         agent_vel = self.data.qvel.ravel();
-        target_pos = self.data.site_xpos[self.target_sid].ravel()[:2]
         # So that we can add other things, if we need to.
-        res = np.concatenate([agent_pos, agent_vel, target_pos])
+        res = np.concatenate([agent_pos, agent_vel])
         self.robot_info_dim = len(res)
         return res
 
