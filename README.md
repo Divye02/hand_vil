@@ -44,7 +44,7 @@ $ python run.py
 
 Note that this will save the generated training data to `gen_data/data/<name_of_run>/train_data`
 and will save the generated validation data to `gen_data/data/<name_of_run>/val_data`, and the trained
-policy to generated dagger policy to `gen_data/data/<name_of_run>/dagger_<name_of_run>`,
+dagger policy `gen_data/data/<name_of_run>/dagger_<name_of_run>`,
  
 ## Bibliography
 
