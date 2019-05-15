@@ -1,4 +1,4 @@
-# visuomotor-hand-man
+# hand_vil
 Learning Deep Visuomotor Policies for Dexterous Hand Manipulation
 
 ## Background
@@ -31,7 +31,10 @@ $ export PYTHONPATH=$PYTHONPATH:<your_path>/mj_envs
 2. **Step 2** We already have the expert policies for each of the environments fetched from [hand_dapg](https://github.com/aravindr93/hand_dapg). So we are ready to train the visual policy for any of the above 4 environments.
 * It is highly reccomended that you use a machine with a GPU for faster training.
 * All the training for the different environments are present in configs/
-* ~~Step about copying the config and placing it in the correct way>~~
+* Move the config that you want to run to the root project directory. For example to use the Hand Hammer config run the following command:
+```
+mv configs/config_main_hammer.py config_main.py
+```
 * Now, we are ready the train the visual model.
 ```
 $ python run.py
