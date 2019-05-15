@@ -43,35 +43,3 @@ if __name__ == '__main__':
     config['env_id'] = ENV_ID[config['env_name']]
 
     main(config)
-
-
-DEFAULT_CONFIG = dict(
-    id_post='test_hammer_less_n_traj',
-    beta_decay= 0.2,
-    beta_start=1.0,
-    num_traj_expert= 5,
-    dagger_epoch= 50,
-    horizon_il= 150,
-    has_robot_info= True,
-    train_traj_per_file= 5,
-    gen_traj_dagger_ep= 5,
-    env_name= "hand_hammer",
-    delta= 0.01,
-    sliding_window= 100,
-    seed= 1000,
-    expert_policy_folder= "hand_hammer_expert",
-    traj_budget_expert= 12500,
-    lr= 0.0003,
-    use_tactile= False,
-    trainer_epochs= 100,
-    eval_num_traj= 30,
-    num_files_train= 1,
-    batch_size_viz_pol= 128,
-    val_traj_per_file= 5,
-    num_files_val= 1,
-    use_cuda=True,
-    camera_name='vil_camera',
-    train_expert=False,
-    device_id=0,
-    use_late_fusion=True,
-)
