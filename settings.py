@@ -27,6 +27,13 @@ ENV_ID = {
     'point_mass': 'mjrl_point_mass-v1',
 }
 
+VIZ_ENV_IDS = {
+    'hand_hammer': 'mjrl_hand_hammer_viz-v0',
+    'hand_door': 'mjrl_hand_door_viz-v0',
+    'hand pickup': 'mjrl_hand_pickup_viz-v0',
+    'hand_pen': 'mjrl_hand_pen_viz-v0'
+}
+
 EXPERT_POLICIES = {
     # Add  Other envs here
     'hand_pickup': 'relocate.pickle',

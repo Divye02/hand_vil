@@ -23,9 +23,9 @@ def main():
     policy.old_model.eval()
     e.visualize_policy_offscreen(ensure_dir(os.path.join(VIDOES_FOLDER, VIZ_FOLDER)) + '/', ENV_NAME, policy=policy,
                                  num_episodes=3, horizon=e.horizon, mode='evaluation', use_img=True, use_seq=True,
-                                 camera_name=CAMERA_NAME[ENV_NAME], pickle_dump=False)
+                                 camera_name=CAMERA_NAME, pickle_dump=False)
     del (e)
 
 
-if __name__ == '_main_':
+if __name__ == '__main__':
     main()
