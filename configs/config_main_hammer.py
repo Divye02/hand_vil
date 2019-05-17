@@ -7,7 +7,7 @@ DEFAULT_CONFIG = dict(
   gen_traj_dagger_ep= 50,
   trainer_epochs= 10,
   seed= 1000,
-  id_post= "public_final_20traj_10ep",
+  id_post= "public_final_dagger",
   num_files_train= 1,
   use_late_fusion= True,
   num_files_val= 1,
@@ -28,6 +28,6 @@ DEFAULT_CONFIG = dict(
   train_expert= False,
   num_traj_expert= 20,
   traj_budget_expert= 12500,
-  train_traj_per_file= 20,
+  train_traj_per_file= 50,
   beta_start= 1
 )

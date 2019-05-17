@@ -1,5 +1,5 @@
 DEFAULT_CONFIG = dict(
-  id_post= "public_final_20traj_10ep",
+  id_post= "public_final_dagger",
   camera_name= "vil_camera",
   device_id= 0,
   train_expert= False,
