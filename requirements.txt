@@ -13,7 +13,7 @@ gast==0.2.0
 glfw==1.5.1
 grpcio==1.12.1
 gym==0.9.3
-html5lib==0.9999999
+html5lib==0.999999999
 idna==2.6
 imageio==2.2.0
 ipykernel==4.8.0
